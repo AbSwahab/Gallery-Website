@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $("#img1").hover (function(){
+            $("#p1").toggle();
+  });
+        $("#img2").hover (function(){
+            $("#p2").toggle();
+  });
+        $("#img3").hover (function(){
+            $("#p3").toggle();
+  });
+        $("#black").click(function(){
+    $("body").toggleClass('blackk');
+    $("li,h3,p,h2,div").toggleClass('blackk1');
+
+  });
+});
+
+    </script>
+    <style>
+        .imghide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="How.html">How?</a></li>
+            <li><a href="contact1.php">Contact</a></li>
+            <li><a class="active"href="product.html">products</a></li>
+            <li><a href="ouraccounts.html">Accounts</a></li>
+            <li id="black" style="float: right;"><a>mood</a></li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/tripod.jpg">
+                    <img id="img1" src="images/tripod.jpg" alt="tripod" width="600" height="400">
+                </a>
+                <div class="desc imghide" id="p1">Suitable for camera balance</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/note10.jpg">
+                    <img id="img2" src="images/note10.jpg" alt="note10" width="600" height="400">
+                </a>
+                <div class="desc imghide" id="p2">Use a suitable device to take pictures</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/phoneflash.jpg">
+                    <img id="img3" src="images/phoneflash.jpg" alt="phoneflash" width="600" height="400">
+                </a>
+                <div class="desc imghide" id="p3">To reflect the object correctly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made By: Abrar</p>
+    </div>
+
+</body>
+
+</html>

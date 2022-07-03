@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+$(document).ready(function(){
+  $("#black").click(function(){
+    $("body").toggleClass('blackk');
+    $("li,h3,p,h2").toggleClass('blackk1');
+
+  });
+    var typed = new Typed('#element', {
+    // Waits 1000ms after typing "First"
+    strings: ['Food', 'Paints', 'Nature','Places'],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true,
+}); 
+});
+</script>
+</head>
+<body>
+
+<div>
+  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="aboutUs.html">About us</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="How.html">How?</a></li>
+  <li><a href="contact1.php">Contact</a></li>
+  <li><a href="product.html">products</a></li>
+  <li><a href="ouraccounts.html">Accounts</a></li>
+  <li id="black" style="float: right;"><a>mood</a></li>
+  <li style="float: right;"><a href="logout.php">Logout</a></li>
+</ul>
+
+
+  
+</div>
+<div class="content">
+  <h2>The Gallery</h2>
+  <p>Pictures of <span id="element"></p>
+</div>
+
+<div class="footer">
+  <p>Made By: Abrar</p>
+</div>
+
+</body>
+</html>
+
+

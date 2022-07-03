@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#black").click(function(){
+    $("body").toggleClass('blackk');
+    $("p").toggleClass('blackk1');
+
+  });
+
+   $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(300);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(300);
+        }
+
+    });
+});
+
+</script>
+
+
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="How.html">How?</a></li>
+            <li><a href="contact1.php">Contact</a></li>
+            <li><a href="product.html">products</a></li>
+            <li><a href="ourccounts.html">Accounts</a></li>
+            <li id="black" style="float: right;"><a>mood</a></li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="art">art</li>
+        <li class="buttons" data-filter="nat">nature</li>
+        <li class="buttons" data-filter="food">food</li>
+        <li class="buttons" data-filter="sea">sea</li>
+    </ul>
+     <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/nat5.jpg" class="image nat"> 
+                    <img src="images/nat5.jpg" alt="nat5" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/nat2.jpg" class="image nat"> 
+                    <img src="images/nat2.jpg" alt="nat2" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/apple.jpg" class="image art"> 
+                    <img src="images/apple.jpg" alt="apple" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/food2.jpg" class="image food"> 
+                    <img src="images/food2.jpg" alt="food2" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/sea5.jpg" class="image sea"> 
+                    <img src="images/sea5.jpg" alt="sea5" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/sea1.jpg" class="image sea"> 
+                    <img src="images/sea1.jpg" alt="sea1" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+       <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/food1.jpg" class="image food"> 
+                    <img src="images/food1.jpg" alt="food1" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/purple.jpg" class="image art"> 
+                    <img src="images/purple.jpg" alt="purple" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/nat4.jpg" class="image nat"> 
+                    <img src="images/nat4.jpg" alt="nat4" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/sea6.jpg" class="image sea"> 
+                    <img src="images/sea6.jpg" alt="sea6" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/rock.jpg" class="image art"> 
+                    <img src="images/rock.jpg" alt="rock" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/sea3.jpg" class="image sea"> 
+                    <img src="images/sea3.jpg" alt="violin" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/nat3.jpg" class="image nat"> 
+                    <img src="images/nat3.jpg" alt="nat3" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/food3.jpg" class="image food"> 
+                    <img src="images/food3.jpg" alt="food3" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+       <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/sea4.jpg" class="image sea"> 
+                    <img src="images/sea4.jpg" alt="sea4" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/paint.jpg" class="image art"> 
+                    <img src="images/paint.jpg" alt="paint" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/nat1.jpg" class="image nat"> 
+                    <img src="images/nat1.jpg" alt="nat1" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/food4.jpg" class="image food"> 
+                    <img src="images/food4.jpg" alt="food4" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/violin.jpg" class="image art"> 
+                    <img src="images/violin.jpg" alt="violin" width="600" height="400">
+                </a>                
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p>Made By: Abrar</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#black").click(function(){
+    $("body").toggleClass('blackk');
+    $("li,h3,p,h2,h5").toggleClass('blackk1');
+    $("div p").toggleClass('p1');
+
+  });
+});
+</script>
+</head>
+<body>
+
+<div>
+  <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a class="active" href="aboutUs.html">About us</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="How.html">How?</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="product.html">products</a></li>
+  <li><a href="ourccounts.html">Accounts</a></li>
+  <li id="black" style="float: right;"><a>mood</a></li>
+</ul>
+  
+</div>
+<div class="content">
+    <h2>About us</h2>
+    <p class="p">This website is a gallery website where I add my picture that I love, I love taking pictures. therefore I decided to create this website to share them with everyone. if you liked one of them you can take it ^^</p>
+</div>
+
+<div class="footer">
+  <h5>Made By: Abrar</h5>
+</div>
+
+</body>
+</html>
+
+

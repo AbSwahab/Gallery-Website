@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $("#black").click(function(){
+    $("body").toggleClass('blackk');
+    $("li,h3,p,h2,div").toggleClass('blackk1');
+
+  });
+});
+
+    </script>
+    <style>
+        .imghide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="How.html">How?</a></li>
+            <li><a href="contact1.php">Contact</a></li>
+            <li><a href="product.html">products</a></li>
+            <li><a class="active"href="ourccounts.html">Accounts</a></li>
+            <li id="black" style="float: right;"><a>mood</a></li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <h3>Add us in our accounts</h3>
+        <div class="responsive">
+            <div class="account">
+                <a target="_blank" href="#instagram.com/">
+                    <img id="img1" src="images/ins.jpg" alt="ins" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="account">
+                <a target="_blank" href="#facebook.com/">
+                    <img id="img2" src="images/face.jpg" alt="face" width="600" height="400">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="account">
+                <a target="_blank" href="#twitter.com">
+                    <img id="img3" src="images/twitter.jpg" alt="twitter" width="600" height="400">
+                </a>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="account">
+                <a target="_blank" href="#linkedin.com">
+                    <img id="img3" src="images/linkedin.jpg" alt="linkedin" width="600" height="400">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made By: Abrar</p>
+    </div>
+
+</body>
+
+</html>
